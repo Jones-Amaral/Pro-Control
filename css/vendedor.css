@@ -1,0 +1,365 @@
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url("../img/fundo-financeiro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .03);
+    z-index: -1;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgb(30, 34, 30);
+    backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.navbar a {
+    color: #e1eee3 !important;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #4CAF50 !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* TITULO */
+.titulo-pagina {
+    color: #172112;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+/* BUSCA */
+.campo-busca {
+    position: relative;
+}
+
+.btn-limpar {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    color: #888;
+
+    display: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.btn-limpar:hover {
+    color: #dc3545;
+}
+
+/* CARDS */
+.card-vendedor {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: none;
+    padding: 28px;
+    color: #172112;
+}
+
+.card-info,
+.card-dashboard {
+    background: #fff;
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    padding: 28px;
+}
+
+.card-dashboard h4 i {
+    color: #4CAF50;
+}
+
+.card-info h4 i,
+.card-info h6 i,
+.card-dashboard h4 i {
+    color: #4CAF50;
+}
+
+/* LABELS */
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+/* INPUTS */
+.form-control {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #d4d4d4;
+    font-size: 14px;
+    color: #1e221e;
+    padding: 10px 12px;
+}
+
+.form-control::placeholder {
+    color: #6d6d6d;
+}
+
+.form-control:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 .15rem rgba(76, 175, 80, .20);
+    background: #fff;
+}
+
+/* BOTÕES */
+.btn-lupa {
+    width: 100%;
+    height: 46px;
+
+    background: #198754;
+    color: #fff;
+
+    border: 2px solid #015c08;
+    border-radius: 8px;
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease;
+}
+
+.btn-lupa:hover {
+    background: #baf8cf;
+    color: #198754;
+    border-color: #198754;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .18s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn i {
+    color: #ffffff;
+    margin-right: 8px;
+}
+
+/* CADASTRAR */
+.btn-cadastrar {
+    background: #198754;
+    color: #fff;
+    border: 2px solid #015c08;
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease;
+}
+
+.btn-cadastrar:hover {
+    background: #baf8cf;
+    color: #198754;
+    border-color: #198754;
+}
+
+.btn-cadastrar i {
+    color: #fff;
+    margin-right: 8px;
+
+    transition: color .25s ease;
+}
+
+.btn-cadastrar:hover i {
+    color: #198754;
+}
+
+/* ALTERAR */
+.btn-alterar {
+    background: #eb8a3b;
+    color: #fff;
+    border: 2px solid #a74b00;
+}
+
+.btn-alterar:hover {
+    background: #ffe5cf;
+    color: #eb8a3b;
+    border: 2px solid #eb8a3b;
+}
+
+.btn-alterar:hover i {
+    color: #eb8a3b;
+}
+
+/* EXCLUIR */
+.btn-excluir {
+    background: #f44336;
+    color: #fff;
+    border: 2px solid #8a0900;
+}
+
+.btn-excluir:hover {
+    background: #ffd0d0;
+    color: #f44336;
+    border: 2px solid #f44336;
+}
+
+.btn-excluir:hover i {
+    color: #f44336;
+}
+
+/* VENDAS */
+.btn-vendas {
+    background: #0d6efd;
+    color: #fff;
+    border: 2px solid #023b91;
+}
+
+.btn-vendas:hover {
+    background: #c4dbff;
+    color: #0d6efd;
+    border: 2px solid #0d6efd;
+}
+
+.btn-vendas:hover i {
+    color: #0d6efd;
+}
+
+/* ÁREA BOTÕES */
+.acoes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* LISTA PRODUTOS */
+.lista-produtos {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-produtos li {
+    background: rgba(255, 255, 255, .65);
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border-radius: 12px;
+}
+
+.produto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* KPI */
+.kpi-box {
+    background: rgba(255, 255, 255, .78);
+    border: 1px solid #d4d4d4;
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
+}
+
+.kpi-box h3 {
+    color: #4CAF50;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.kpi-box span {
+    color: #172112;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* GRAFICO */
+.grafico-container {
+    background: rgba(255, 255, 255, .78);
+    border: 1px solid #d4d4d4;
+    border-radius: 14px;
+    padding: 25px;
+    min-height: 420px;
+}
+
+#graficoVendas {
+    width: 100% !important;
+    max-height: 350px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: auto;
+    padding: 20px 0;
+    background: rgb(30, 34, 30);
+    backdrop-filter: blur(6px);
+    color: #e1eee3;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    font-size: 14px;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px) {
+    .acoes {
+        flex-direction: column;
+    }
+
+    .btn {
+
+        width: 100%;
+    }
+
+    .titulo-pagina {
+
+        text-align: center;
+
+        padding-left: 0;
+    }
+
+    .btn-lupa {
+        width: 100%;
+    }
+}

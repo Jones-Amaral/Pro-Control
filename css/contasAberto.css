@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url("../img/fundo-financeiro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.03);
+    z-index: -1;
+}
+
+h4 {
+    color: #172112;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.navbar {
+    background: rgb(30, 34, 30);
+    backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.navbar a {
+    color: #e1eee3 !important;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #4CAF50 !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: none;
+    padding: 0;
+    color: #172112;
+}
+
+label {
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #d4d4d4;
+    font-size: 14px;
+    color: #1e221e;
+    padding: 10px 12px;
+}
+
+.form-control:focus{
+    border-color:#4CAF50;
+    box-shadow:0 0 0 .15rem rgba(76,175,80,.20);
+    background:#fff;
+}
+
+.btn {
+
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 7px 14px;
+}
+
+.btn-success{
+    background:#198754;
+    color:#fff;
+    border:2px solid #015c08;
+}
+
+.btn-success:hover{
+    background:#baf8cf;
+    color:#198754;
+    border:2px solid #198754;
+    transform:translateY(-1px);
+}
+
+.btn-primary{
+    background:#198754;
+    color:#fff;
+    border:2px solid #015c08;
+}
+
+.btn-primary:hover{
+    background:#baf8cf;
+    color:#198754;
+    border:2px solid #198754;
+    transform:translateY(-1px);
+}
+
+.table thead th {
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+}
+
+.table tbody td {
+    color: #000;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background: #f3f5f3;
+}
+
+.text-warning {
+
+    font-weight: 500;
+}
+
+.text-success {
+
+    font-weight: 500;
+    color: #4CAF50 !important;
+}
+
+.footer {
+    padding: 20px 0;
+    background: rgb(30, 34, 30);
+    backdrop-filter: blur(6px);
+    color:#e1eee3;
+    font-size:14px;
+    border-top:1px solid rgba(255,255,255,.1);
+    margin-top:auto;
+}

@@ -1,0 +1,138 @@
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url("../img/fundo-financeiro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.03);
+    z-index: -1;
+}
+
+.container {
+    flex: 1;
+    max-width: 1400px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgb(30, 34, 30);
+    backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.navbar a {
+    color: #e1eee3 !important;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #4CAF50 !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* SISTEMA */
+.titulo-sistema {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.frase-motivacional {
+    color: #d8e5da;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+/* GRID HOME */
+.grid-home {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+    max-width:1180px;
+
+    margin:55px auto 80px auto;
+}
+
+/* CARD HOME */
+.card-home {
+    background: hsla(0, 0%, 100%, 0.75);
+    border: 1px solid #d4d4d4;
+    backdrop-filter: blur(6px);
+
+    min-height: 260px;
+    padding: 30px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #1e221e;
+
+    transition: 0.25s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
+    text-align: center;
+}
+
+.card-home:hover {
+    transform: translateY(-5px);
+    background: #fff;
+}
+
+.card-home i {
+    font-size: 42px;
+    margin-bottom: 16px;
+    color: #4CAF50;
+}
+
+.card-home span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-home p {
+    font-size: 15px;
+    margin-top: 14px;
+    line-height: 1.8;
+    color: #1e221e;
+    opacity: 0.95;
+    max-width: 92%;
+}
+
+/* FOOTER */
+.footer {
+    padding: 20px 0;
+    background: rgb(30, 34, 30);
+    backdrop-filter: blur(6px);
+    color: #e1eee3;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
