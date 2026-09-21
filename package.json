@@ -1,0 +1,26 @@
+{
+  "name": "pro-control",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tauri": "tauri"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jones-Amaral/Pro-Control.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jones-Amaral/Pro-Control/issues"
+  },
+  "homepage": "https://github.com/Jones-Amaral/Pro-Control#readme",
+  "description": "",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.5"
+  },
+  "dependencies": {
+    "@tauri-apps/plugin-sql": "^2.4.1"
+  }
+}
